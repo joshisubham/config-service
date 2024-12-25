@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          default-label: master
+          uri: https://github.com/joshisubham/config-repo.git
+      fail-fast: true
+server:
+  port: 8888
+
+
+#spring:
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/your-username/config-repo.git # Replace with your Git repo URL
+#          default-label: main
